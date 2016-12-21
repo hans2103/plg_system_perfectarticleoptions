@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="attribs">
+        <fieldset name="basic">
+            <field
+                    name="articleclass_sfx"
+                    type="textarea"
+                    label="PLG_SYSTEM_PERFECTARTICLEOPTIONS_ARTICLECLASS_SFX_LABEL"
+                    description="PLG_SYSTEM_PERFECTARTICLEOPTIONS_ARTICLECLASS_SFX_DESC"
+                    rows="3"
+            />
+        </fieldset>
+    </fields>
+</form>
