@@ -43,17 +43,23 @@ class PlgSystemPerfectArticleoptions extends JPlugin
 		}
 
 		$name = $form->getName();
-
+		if (!in_array($name, array('com_content.article')) && !in_array($name, array('com_categories.categorycom_content'))):
+		    return true;
+		endif;
 		// Make sure we are on the edit article item page
-		if (!in_array($name, array('com_content.article')))
-		{
-			return true;
-		}
-
-		// Load form.xml
-		JForm::addFormPath(__DIR__ . '/forms');
-		$form->loadFile('perfectarticleoptions');
-
-		return true;
+		if (in_array($name, array('com_content.article'))):
+		    // Load form.xml
+		    JForm::addFormPath(__DIR__ . '/forms');
+		    $form->loadFile('perfectarticleoptions');
+		    return true;
+		endif;
+		// Make sure we are on the edit article item page
+		if (in_array($name, array('com_categories.categorycom_content'))):
+		    // Load form.xml
+		    JForm::addFormPath(__DIR__ . '/forms');
+		    $form->loadFile('perfectcategoryoptions');
+		    return true;
+		endif;
+	return true;
 	}
 }
