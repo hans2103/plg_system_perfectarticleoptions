@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fields name="params">
+        <fieldset name="basic">
+
+            <field name="categoryclass_sfx" type="list" label="PLG_SYSTEM_PERFECTARTICLEOPTIONS_CATEGORYCLASS_SFX_LABEL" description="PLG_SYSTEM_PERFECTARTICLEOPTIONS_CATEGORYCLASS_SFX_DESC" size="7">
+                <option value="">None</option>
+                <option value="geel">Geel</option>
+                <option value="groen">Groen</option>
+                <option value="blauw">Blauw</option>
+                <option value="oranje">Oranje</option>
+            </field>
+
+        </fieldset>
+    </fields>
+</form>
